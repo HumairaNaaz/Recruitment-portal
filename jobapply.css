@@ -1,0 +1,32 @@
+.container{
+    height: 60vh;
+    margin-top: 180px;
+}
+.apply{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.998);
+    /* text-decoration: underline;
+    text-decoration-color:black; */
+}
+.form{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+
+}
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.form-control{
+    width: 80% !important;
+    border-radius: 1.25rem !important;
+}
+.btn{
+        position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+}

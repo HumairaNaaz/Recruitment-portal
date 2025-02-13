@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-size: cover;
+    background-color: #7777fc;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    background-color: white;
+    padding: 0px;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    margin-top: -4vh;
+}
+.social-icon{
+    font-size: 30px;
+}
+.bgcol{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.home-hero-bg{
+    margin-top: 20px;
+}
+.home-hero-bg img{
+    display: block;
+    margin-top: 120px;
+}
+.header {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: #7777fc;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+.logo-container {
+    margin-top: -30px;
+
+}
+.mainheader{
+    max-width: 100vw;
+    min-width: 100vw;
+    background-color: #7777fc;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+}
+.logo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-img {
+    max-width: 80px;
+    height: auto;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    
+  }
+@media screen and (max-width: 991px) {
+    .search-container{
+        display: grid;
+    }
+    .search-box{
+        max-width: 80vw;
+    }
+    .notification{
+        margin-top:110px;
+        max-width:80vw;
+        display: block;
+    }
+}
+  .search-box {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    margin-top: 250px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.search-box:hover{
+    box-shadow: 10px 20px 14px ;
+    transition: 0.8s;
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+.notification{
+    position: relative;
+    overflow: hidden;
+    margin-top: 250px;
+    width: 500px;
+    padding: 20px;
+    min-height: 570px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: right;
+    margin-right: 0vw;
+    color: rgb(43, 36, 36);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.notification:hover{
+    box-shadow: 10px 20px 14px ;
+    transition: 0.8s;
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+.job{
+    color: black;
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+}
+  .search-box label {
+    font-weight: bold;
+  }
+
+  .search-box input[type="text"],
+  .search-box select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 60px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-button,
+  .clear-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+.index_search-box{
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    margin-top: 0vh;
+}
+.index_search-box:hover{
+    box-shadow: 10px 20px 14px ;
+    transition: 0.8s;
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+.index_notification{
+    width: 500px;
+    padding: 20px;
+    min-height: 570px;
+    z-index: 1;
+    border-radius: 5px;
+    justify-content: right;
+    margin-right: -7vw;
+    color: rgb(43, 36, 36);
+    margin-top: 0vh;
+  }
+  .index_notification:hover{
+    box-shadow: 10px 20px 14px ;
+    transition: 0.8s;
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+.mx-2 {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 23px;
+
+}
+.btn-secondary{
+    background-color: white;
+    border: none;
+    color: #007bff;
+}
+.btn-secondary:hover {
+    color: #007bff;
+    background-color: white;
+    border: none;
+}
+
+.notifi{
+    position: absolute;
+    -webkit-animation: notificationanime 5s linear 2s infinite;
+}
+.not{
+    color: blue;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.notifi:hover{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    cursor: pointer;
+}
+
+@-webkit-keyframes notificationanime {
+    0%{
+        top: 10%;
+    }
+    100%{
+        top: 101%;
+    }
+}
